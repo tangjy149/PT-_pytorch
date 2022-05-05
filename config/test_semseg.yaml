@@ -1,0 +1,25 @@
+batch_size: 4
+epoch: 10
+learning_rate: 1e-3
+gpu: 0
+num_point: 1024
+optimizer: Adam
+weight_decay: 1e-4
+normal: True
+lr_decay: 0.5
+step_size: 20
+test_area: 1
+num_category: 13
+visual: True
+num_votes: 5 #aggregate segmentation scores with voting
+num_workers: 8
+train_episode: 600
+output: ./save
+
+model:
+  nneighbor: 16
+  nblocks: 4
+  transformer_dim: 512
+  name: PointTransformer
+
+work_dir: log/PT/semsegs
